@@ -1,4 +1,3 @@
-
 set nocompatible  "Kill vi-compatibility
 set t_Co=256 "256 color
 set encoding=utf-8 "UTF-8 character encoding
@@ -42,6 +41,11 @@ set paste
 " Strip whitespace from end of lines when writing file
 autocmd BufWritePre * :%s/\s\+$//e
 
+set laststatus=2                    " Always show status line
+set statusline=%f\                  " Show filename
+set statusline+=%h%w%m%r\           " Show flags
+set statusline+=%=                  " Align right
+set statusline+=%(%l,%c%V\ %=\ %P%) " Show rulerautocmd BufWritePre * :%s/\s\+$//e
 " Syntax highlighting and stuff
 syntax on
 filetype plugin indent on

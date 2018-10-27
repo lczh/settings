@@ -46,6 +46,10 @@ set statusline=%f\                  " Show filename
 set statusline+=%h%w%m%r\           " Show flags
 set statusline+=%=                  " Align right
 set statusline+=%(%l,%c%V\ %=\ %P%) " Show rulerautocmd BufWritePre * :%s/\s\+$//e
+let $BASH_ENV="~/.bash_aliases"     " Notice this config needs a new bash_aliases file which explictly
+									" lists all bash aliases within, for example:
+									" shopt -s expand_aliases
+									" alias smlnj="rlwrap -c sml"
 " Syntax highlighting and stuff
 syntax on
 filetype plugin indent on

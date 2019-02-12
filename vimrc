@@ -50,6 +50,11 @@ let $BASH_ENV="~/.bash_aliases"     " Notice this config needs a new bash_aliase
 									" lists all bash aliases within, for example:
 									" shopt -s expand_aliases
 									" alias smlnj="rlwrap -c sml"
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
+nnoremap <C-p> "+p
+vnoremap <C-p> "+p
+
 " Syntax highlighting and stuff
 syntax on
 filetype plugin indent on
